@@ -1,22 +1,35 @@
 const quotes = [
-  "Believe in yourself.",
-  "Success needs patience.",
-  "Hard work never fails.",
-  "Dream big.",
-  "Never give up.",
-  "Stay positive.",
-  "Your future is created today.",
-  "Consistency is the key."
+  {
+    text: "Hard work never fails.",
+    author: "A. P. J. Abdul Kalam"
+  },
+  {
+    text: "Believe in yourself.",
+    author: "Swami Vivekananda"
+  },
+  {
+    text: "Success is not final, failure is not fatal.",
+    author: "Winston Churchill"
+  },
+  {
+    text: "Dream big and dare to fail.",
+    author: "Norman Vaughan"
+  },
+  {
+    text: "Consistency is the key to success.",
+    author: "Anonymous"
+  }
 ];
-
-
 
 function newQuote() {
   const randomIndex = Math.floor(Math.random() * quotes.length);
 
-  document.getElementById("quote").innerText = quotes[randomIndex];
-  document.getElementById("quote").style.color = colors[randomIndex];
+  document.getElementById("quote").innerText =
+    "“" + quotes[randomIndex].text + "”";
+
+  document.getElementById("author").innerText =
+    "— " + quotes[randomIndex].author;
 }
 
-// Show one quote when page loads
+// Show quote on page load
 newQuote();
