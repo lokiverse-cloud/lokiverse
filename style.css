@@ -1,0 +1,42 @@
+body {
+  text-align: center;
+  font-family: Arial;
+  background-color: #f4f4f4;
+  margin-top: 100px;
+}
+  button {
+  padding: 6px 14px;          /* reduced size */
+  font-size: 14px;            /* smaller text */
+  margin-top: 20px;
+  cursor: pointer;
+  border: 1.5px solid #333;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  background-color: #333;
+  color: white;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+#quote {
+  font-size: 28px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin: 25px;
+  line-height: 1.4;
+  color: #2c2c2c;   /* neat dark gr
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.welcome-box h1 {
+  font-size: 40px;
+}
